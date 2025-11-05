@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental - Hero Section</title>
+    <link rel="stylesheet" href="kk.css">
+</head>
+<body>
+     <!-- Header Section -->
+     <header class="header">
+        <div class="logo">
+            <a href="#">🚗 Rent-A-Car</a>
+        </div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="file:///C:/Users/STUDENT/Desktop/2305038_website/aboutus.html">About</a></li>
+                <li><a href="file:///C:/Users/STUDENT/Desktop/2305038_website/cars.html">Cars</a></li>
+                <li><a href="file:///C:/Users/STUDENT/Desktop/2305038_website/services.html">Services</a></li>
+                <li><a href="file:///C:/Users/STUDENT/Desktop/2305038_website/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-buttons">
+            <a href="file:///C:/Users/STUDENT/Desktop/2305038_website/sign.html" class="sign-in">Sign In</a>
+            <a href="file:///C:/Users/STUDENT/Desktop/2305038_website/booknow.html" class="book-now">Book Now</a>
+        </div>
+
+        <!-- Mobile Menu Icon -->
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <script>
+        // Mobile menu toggle script
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector(".nav-menu").classList.toggle("active");
+        });
+    </script>
+
+
+    <header class="hero">
+        <div class="overlay">
+            <div class="hero-content">
+                <h1>Drive Your Dream Car Today!</h1>
+                <p>Affordable, Reliable, and Hassle-Free Car Rentals.</p>
+                <a href="#booking" class="cta-button">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+     <!-- Instant Booking Section -->
+     <section class="booking">
+        <form class="booking-form">
+            <div class="form-group">
+                <label for="pickup-location">Pick-up Location</label>
+                <select id="pickup-location">
+                    <option value="" disabled selected>Select location</option>
+                    <option value="new-york">New York</option>
+                    <option value="los-angeles">Los Angeles</option>
+                    <option value="chicago">Chicago</option>
+                    <option value="miami">Miami</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dropoff-location">Drop-off Location</label>
+                <select id="dropoff-location">
+                    <option value="" disabled selected>Select location</option>
+                    <option value="new-york">New York</option>
+                    <option value="los-angeles">Los Angeles</option>
+                    <option value="chicago">Chicago</option>
+                    <option value="miami">Miami</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pickup-date">Pick-up Date</label>
+                <input type="date" id="pickup-date">
+            </div>
+
+            <div class="form-group">
+                <label for="dropoff-date">Drop-off Date</label>
+                <input type="date" id="dropoff-date">
+            </div>
+
+            <div class="form-group">
+                <label for="car-type">Car Type</label>
+                <select id="car-type">
+                    <option value="" disabled selected>Select car type</option>
+                    <option value="economy">Economy</option>
+                    <option value="suv">SUV</option>
+                    <option value="luxury">Luxury</option>
+                    <option value="sports">Sports</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="search-button">Find a Car</button>
+            </div>
+        </form>
+    </section>
+
+      <!-- Why Choose Us Section -->
+      <section class="why-choose-us">
+        <h2>Why Choose Us?</h2>
+        <p class="section-subtitle">We make car rentals easy, affordable, and reliable.</p>
+        
+        <div class="features-container">
+            <div class="feature-box">
+                <i class="fas fa-car"></i>
+                <h3>Wide Range of Cars</h3>
+                <p>Choose from economy, luxury, SUVs, and more.</p>
+            </div>
+
+            <div class="feature-box">
+                <i class="fas fa-tag"></i>
+                <h3>Best Price Guarantee</h3>
+                <p>Get the best deals and discounts on rentals.</p>
+            </div>
+
+            <div class="feature-box">
+                <i class="fas fa-clock"></i>
+                <h3>Fast & Easy Booking</h3>
+                <p>Book your car online in just a few clicks.</p>
+            </div>
+
+            <div class="feature-box">
+                <i class="fas fa-truck"></i>
+                <h3>Free Pickup & Drop-off</h3>
+                <p>Enjoy convenient car delivery to your location.</p>
+            </div>
+
+            <div class="feature-box">
+                <i class="fas fa-star"></i>
+                <h3>Top Rated Service</h3>
+                <p>Thousands of happy customers trust our service.</p>
+            </div>
+
+            <div class="feature-box">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Customer Support</h3>
+                <p>Our team is always ready to assist you.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Cars Section -->
+    <section class="featured-cars">
+        <h2>Featured Cars</h2>
+        <p class="section-subtitle">Choose from our best selection of rental cars.</p>
+
+        <div class="cars-container">
+            <!-- Car 1 -->
+            <div class="car-card">
+                <img src="bmw.png" alt="Luxury Car">
+                <h3>BMW X5</h3>
+                <p class="price">$80/day</p>
+                <a href="#" class="rent-now">Rent Now</a>
+            </div>
+
+            <!-- Car 2 -->
+            <div class="car-card">
+                <img src="Ford mustang.png" alt="Sports Car">
+                <h3>Ford Mustang</h3>
+                <p class="price">$90/day</p>
+                <a href="#" class="rent-now">Rent Now</a>
+            </div>
+
+            <!-- Car 3 -->
+            <div class="car-card">
+                <img src="Range rover evoque.png" alt="SUV">
+                <h3>Range Rover Evoque</h3>
+                <p class="price">$100/day</p>
+                <a href="#" class="rent-now">Rent Now</a>
+            </div>
+
+            <!-- Car 4 -->
+            <div class="car-card">
+                <img src="tesla model s.png" alt="Electric Car">
+                <h3>Tesla Model S</h3>
+                <p class="price">$120/day</p>
+                <a href="#" class="rent-now">Rent Now</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <h2>How It Works</h2>
+        <p class="section-subtitle">Renting a car has never been this easy!</p>
+
+        <div class="steps-container">
+            <!-- Step 1 -->
+            <div class="step-box">
+                <i class="fas fa-search"></i>
+                <h3>Choose Your Car</h3>
+                <p>Browse our wide selection of cars and pick the one that suits your needs.</p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="step-box">
+                <i class="fas fa-calendar-check"></i>
+                <h3>Book Online</h3>
+                <p>Fill in your details and schedule a pick-up or delivery time.</p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="step-box">
+                <i class="fas fa-car-side"></i>
+                <h3>Drive Away</h3>
+                <p>Pick up your car or have it delivered, then enjoy the ride!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <p class="section-subtitle">Real experiences from happy renters.</p>
+
+        <div class="testimonials-container">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+                <img src="customer 1.png" alt="Customer 1">
+                <h3>Emily Johnson</h3>
+                <p class="testimonial-text">"Amazing experience! The car was clean and the service was fantastic. Highly recommended!"</p>
+                <div class="stars">
+                    ★★★★☆
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <img src="customer 2.png" alt="Customer 2">
+                <h3>Michael Smith</h3>
+                <p class="testimonial-text">"Smooth rental process and excellent customer support. I’ll definitely rent again!"</p>
+                <div class="stars">
+                    ★★★★★
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                <img src="customer 3.1.png" alt="Customer 3">
+                <h3>Sarah Brown</h3>
+                <p class="testimonial-text">"Affordable prices and a great selection of cars. Couldn’t have asked for a better experience!"</p>
+                <div class="stars">
+                    ★★★★★
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- Special Offers Section -->
+     <section class="special-offers">
+        <h2>Special Offers & Discounts</h2>
+        <p class="section-subtitle">Get the best deals on your favorite cars. Limited time only!</p>
+
+        <div class="offers-container">
+            <!-- Offer 1 -->
+            <div class="offer-card">
+                <img src="luxury car discount.png" alt="Luxury Car Discount">
+                <h3>Luxury Car - 20% Off</h3>
+                <p class="offer-text">Book a luxury car now and enjoy 20% off your rental.</p>
+                <p class="offer-validity">Valid until: <strong>March 31, 2025</strong></p>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+
+            <!-- Offer 2 -->
+            <div class="offer-card">
+                <img src="weekend special.png" alt="Weekend Special">
+                <h3>Weekend Special - 30% Off</h3>
+                <p class="offer-text">Rent any car from Friday to Sunday and get 30% off.</p>
+                <p class="offer-validity">Valid until: <strong>April 15, 2025</strong></p>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+
+            <!-- Offer 3 -->
+            <div class="offer-card">
+                <img src="electric cars.png" alt="Electric Car Discount">
+                <h3>Electric Cars - Save $50</h3>
+                <p class="offer-text">Go green! Get $50 off on all electric car rentals.</p>
+                <p class="offer-validity">Valid until: <strong>April 30, 2025</strong></p>
+                <a href="#" class="book-now">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Location & Coverage Section -->
+    <section class="location-coverage">
+        <h2>Our Locations & Coverage</h2>
+        <p class="section-subtitle">We operate in multiple locations to serve you better.</p>
+
+        <div class="location-container">
+            <!-- Google Map -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31047.64858328684!2d73.81800038103383!3d15.29932649554578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfc07f1ef3f97b%3A0xe6c4e5f0e8b57635!2sGoa!5e0!3m2!1sen!2sin!4v1641477344982!5m2!1sen!2sin"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+            <!-- Service Areas -->
+            <div class="service-areas">
+                <h3>We Cover:</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> New York, USA</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Los Angeles, USA</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Toronto, Canada</li>
+                    <li><i class="fas fa-map-marker-alt"></i> London, UK</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Melbourne, Australia</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <p class="section-subtitle">Find answers to common questions about our rental services.</p>
+
+        <div class="faq-container">
+            <!-- Question 1 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What are the requirements to rent a car?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>To rent a car, you need to be at least 21 years old, have a valid driver's license, and a credit card for payment.</p>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you offer insurance for rentals?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! We offer various insurance plans to cover damages, theft, and liability.</p>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I return the car to a different location?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, you can return the car to a different location. However, additional fees may apply.</p>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What happens if I return the car late?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>A late return may result in additional charges. Please check our rental policy for more details.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Final CTA Section -->
+     <section class="cta">
+        <h2>Book Your Rental Car Today!</h2>
+        <p>Get the best deals on top-rated rental cars. Easy booking & hassle-free experience.</p>
+        <a href="#booking" class="cta-button">Book Now</a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <!-- Contact Info -->
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone-alt"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> support@carrental.com</p>
+                <p><i class="http://127.0.0.1:5500/maps.html"></i> 123 Main Street, New York, USA</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-box">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Car Rental. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
